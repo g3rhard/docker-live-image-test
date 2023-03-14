@@ -12,7 +12,7 @@ docker build . -t live-test
 
 ```sh
 CID=$(docker run -d live-test /bin/true)
-docker export ${CID} | mksquashfs - image.squashfs -tar -noappend
+docker export ${CID} | mksquashfs - image.squashfs -tar -noappend -comp xz -no-progress
 ```
 
 ## Check mksquashfs file
@@ -24,3 +24,4 @@ unsquashfs -ls image.squashfs
 ## Links
 
 * [iximiuz - From Docker Container to Bootable Linux Disk Image](https://iximiuz.com/en/posts/from-docker-container-to-bootable-linux-disk-image/)
+* [defunctzombie/jetson-nano-image-maker](https://github.com/defunctzombie/jetson-nano-image-maker)
