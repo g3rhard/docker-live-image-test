@@ -10,6 +10,8 @@ docker build . -t live-test
 
 ## Export docker container via mksquashfs file
 
+### mksquashfs 4.6
+
 ```sh
 CID=$(docker run -d live-test /bin/true)
 docker export ${CID} | mksquashfs - image.squashfs -tar -noappend -comp xz -no-progress
