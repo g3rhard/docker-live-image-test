@@ -27,3 +27,4 @@ unsquashfs -ls image.squashfs
 
 * [iximiuz - From Docker Container to Bootable Linux Disk Image](https://iximiuz.com/en/posts/from-docker-container-to-bootable-linux-disk-image/)
 * [defunctzombie/jetson-nano-image-maker](https://github.com/defunctzombie/jetson-nano-image-maker)
+* [hashbrowncipher/docker2squash.sh](https://gist.github.com/hashbrowncipher/9b811bad8353a7246695a1e2bfea0e84)
