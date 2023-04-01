@@ -1,1 +1,5 @@
 *.squashfs
+mnt
+*.img
+*.qcow2
+*.dir
