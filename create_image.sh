@@ -49,8 +49,8 @@ dd if=/usr/lib/SYSLINUX/mbr.bin of=/os/${DISTR}.img bs=440 count=1 conv=notrunc
 # echo_blue "[Convert to qcow2]"
 # qemu-img convert -c /os/${DISTR}.img -O qcow2 /os/${DISTR}.qcow2
 
-echo_blue "[Convert to mksquash]"
-mksquashfs /os/${DISTR}.dir /os/${DISTR}.squashfs -noappend -b 1048576 -comp xz -Xdict-size 100%
+# echo_blue "[Convert to mksquash]"
+# mksquashfs /os/${DISTR}.dir /os/${DISTR}.squashfs -noappend -b 1048576 -comp xz -Xdict-size 100%
 
 [ "${UID_HOST}" -a "${GID_HOST}" ] && chown ${UID_HOST}:${GID_HOST} /os/${DISTR}.img # /os/${DISTR}.qcow2
 
